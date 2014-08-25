@@ -29,7 +29,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(?&lt;=[^\\]|)(')</string>
+			<string>(?&lt;=[^\\]|)(['"])</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
@@ -43,7 +43,7 @@
 			<key>contentName</key>
 			<string>string.quoted.single.MScript</string>
 			<key>end</key>
-			<string>(?&lt;=[^\\]|[\\][\\]|[^\\'])(')</string>
+			<string>(?&lt;=[^\\]|[\\][\\]|[^\\'])(['"])</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -89,7 +89,7 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>Equal to Operator</string>
+			<string>Hightlight Operators</string>
 			<key>match</key>
 			<string>([=\&lt;\&gt;\!\|\&amp;])</string>
 			<key>name</key>
@@ -97,7 +97,7 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>Label</string>
+			<string>Hightlight Labels</string>
 			<key>match</key>
 			<string>([a-zA-Z_][a-zA-Z0-9_]+)(?=:)(?=[^\/])</string>
 			<key>name</key>
@@ -113,7 +113,7 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>True/False/Null</string>
+			<string>True/False/Null/Else/Case/Default</string>
 			<key>match</key>
 			<string>(\b(true|false|null|else|case|default)\b)(?=[^A-Za-z0-9])</string>
 			<key>name</key>
